@@ -14,7 +14,6 @@ def extract_country_info(country):
     capital = country.get('capital', '')
     subregion = country.get('subregion', '')
     population = country.get('population', 0)
-    # Добавление флага, если доступен
     # flag = country.get('flags', [''])[0]
     return {
         'name': name,
