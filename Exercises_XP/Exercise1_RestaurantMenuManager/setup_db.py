@@ -42,27 +42,3 @@ try:
 except psycopg2.Error as e:
     print("Ошибка при создании таблицы Menu_Items:")
     print(e)
-# import psycopg2
-#
-# conn = psycopg2.connect(dbname="postgres", user="postgres", password="0000000000")
-# conn.autocommit = True
-# cursor = conn.cursor()
-#
-# cursor.execute("CREATE DATABASE restaurant")
-# cursor.close()
-# conn.close()
-#
-# conn = psycopg2.connect(dbname="restaurant", user="postgres", password="0000000000")
-# cursor = conn.cursor()
-#
-#
-# cursor.execute("""
-# CREATE TABLE Menu_Items (
-#     item_id SERIAL PRIMARY KEY,
-#     item_name VARCHAR(30) NOT NULL,
-#     item_price SMALLINT DEFAULT 0
-# )
-# """)
-# conn.commit()
-# cursor.close()
-# conn.close()
